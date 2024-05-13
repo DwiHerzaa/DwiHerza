@@ -9,8 +9,8 @@ dependencies:
     specifier: ^4.2.2
     version: 4.2.2
   '@urql/vue':
-    specifier: ^1.1.2
-    version: 1.1.2(graphql@16.8.1)(vue@3.4.21)
+    specifier: ^1.2.0
+    version: 1.2.0(@urql/core@5.0.3)(vue@3.4.21)
   '@vueuse/head':
     specifier: ^2.0.0
     version: 2.0.0(vue@3.4.21)
@@ -127,8 +127,8 @@ devDependencies:
 
 packages:
 
-  /@0no-co/graphql.web@1.0.4(graphql@16.8.1):
-    resolution: {integrity: sha512-W3ezhHGfO0MS1PtGloaTpg0PbaT8aZSmmaerL7idtU5F7oCI+uu25k+MsMS31BVFlp4aMkHSrNRxiD72IlK8TA==}
+  /@0no-co/graphql.web@1.0.7(graphql@16.8.1):
+    resolution: {integrity: sha512-E3Qku4mTzdrlwVWGPxklDnME5ANrEGetvYw4i2GCRlppWXXE4QD66j7pwb8HelZwS6LnqEChhrSOGCXpbiu6MQ==}
     peerDependencies:
       graphql: ^14.0.0 || ^15.0.0 || ^16.0.0
     peerDependenciesMeta:
@@ -3286,25 +3286,24 @@ packages:
       vue: 3.4.21
     dev: false
 
-  /@urql/core@4.0.11(graphql@16.8.1):
-    resolution: {integrity: sha512-FFdY97vF5xnUrElcGw9erOLvtu+KGMLfwrLNDfv4IPgdp2IBsiGe+Kb7Aypfd3kH//BETewVSLm3+y2sSzjX6A==}
+  /@urql/core@5.0.3(graphql@16.8.1):
+    resolution: {integrity: sha512-NZ3YqRr6IphbpFjGqujJOuVuV8/QegYxfjy1zdmOSWpYYFLpmMBfVtzZ/L8IiqPERVAEAIKjUsryLnVtXJQo4w==}
     dependencies:
-      '@0no-co/graphql.web': 1.0.4(graphql@16.8.1)
+      '@0no-co/graphql.web': 1.0.7(graphql@16.8.1)
       wonka: 6.3.2
     transitivePeerDependencies:
       - graphql
     dev: false
 
-  /@urql/vue@1.1.2(graphql@16.8.1)(vue@3.4.21):
-    resolution: {integrity: sha512-ixfV0PTXcOl4KrZK24X+9B4rX9KSxqq1xhHZ0SOkAxgxMkomjJhtUl+9PuRL+LEzGWVr91OCEo68VPQ8uc5rBA==}
+  /@urql/vue@1.2.0(@urql/core@5.0.3)(vue@3.4.21):
+    resolution: {integrity: sha512-JQH+C4PRbRIaTLPABNHymp9ndvWtfD5vjsPKN5w2hnJOtNY8OhAnbS2dPioZ+7Qd+8qNGhHQkZUE39/LygtaOQ==}
     peerDependencies:
+      '@urql/core': ^5.0.0
       vue: ^2.7.0 || ^3.0.0
     dependencies:
-      '@urql/core': 4.0.11(graphql@16.8.1)
+      '@urql/core': 5.0.3(graphql@16.8.1)
       vue: 3.4.21
       wonka: 6.3.2
-    transitivePeerDependencies:
-      - graphql
     dev: false
 
   /@vitejs/plugin-vue@5.0.4(vite@5.2.6)(vue@3.4.21):
